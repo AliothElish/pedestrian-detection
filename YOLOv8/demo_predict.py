@@ -1,5 +1,5 @@
 from ultralytics import YOLO
 
-yolo = YOLO("./yolov8n.pt", task="detect")
+yolo = YOLO("./YOLOv8/yolov8n.pt", task="detect")
 
-result = yolo(source="./ultralytics/assets/bus.jpg")
+result = yolo(source="./YOLOv8/ultralytics/assets/bus.jpg", save=True, conf=0.05)
