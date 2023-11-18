@@ -1,4 +1,4 @@
-# pedestrian-detection
+# Pedestrian Detection
 
 <details open>
 <summary>Install</summary>
