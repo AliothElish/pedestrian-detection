@@ -14,9 +14,9 @@ test: # test images (optional)
 
 # Classes
 names:
-  0: ignore regions
-  1: pedestrians
-  2: riders
-  3: sitting persons
-  4: unusual postures
-  5: group of people
+  # 0: ignore regions
+  0: pedestrians
+  # 2: riders
+  # 3: sitting persons
+  # 4: unusual postures
+  # 5: group of people
