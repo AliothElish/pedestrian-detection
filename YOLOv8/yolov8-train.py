@@ -1,11 +1,20 @@
 from ultralytics import YOLO
 
 
-batchs = [18]
+# Load a model
+model = YOLO("runs/detect/best (1).pt")
 
-for i in batchs:
-    # Load a model
-    model = YOLO("yolov8m.pt")
-
-    # Train the model
-    model.train(data="yolo-cp.yaml", workers=0, epochs=30, batch=i, optimizer="AdamW")
+# Train the model
+model.train(
+    data="yolo-trans.yaml",
+    workers=0,
+    epochs=80,
+    batch=16,
+    optimizer="AdamW",
+    imgsz=[1440, 736],
+)
+# ,
+#     scale=0,
+#     flipud=0.5,
+#     mosaic=0,
+#     copy_paste=0.3,
